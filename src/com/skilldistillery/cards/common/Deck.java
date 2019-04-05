@@ -9,6 +9,7 @@ public class Deck {
 
 	public Deck() {
 		cards = freshDeck();
+		shuffle();
 	}
 
 	private List<Card> freshDeck() {
@@ -26,6 +27,7 @@ public class Deck {
 	}
 	
 	public Card dealCard() {
+		
 		return cards.remove(0);
 	}
 	
