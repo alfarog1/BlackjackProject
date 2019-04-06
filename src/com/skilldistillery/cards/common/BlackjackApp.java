@@ -6,6 +6,7 @@ public class BlackjackApp {
 	Player mav = new Player();
 	Dealer bob = new Dealer();
 	Scanner sc = new Scanner(System.in);
+	Deck d = new Deck();
 	boolean dealerGo = true;
 
 	public static void main(String[] args) {
@@ -102,9 +103,11 @@ public class BlackjackApp {
 
 		if (mavH <= 21 && mavH > bobH) {
 			System.out.println("\nYou win!!\n");
+			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
 		}
 		if (mavH <= 21 && bobH > 21) {
 			System.out.println("\nYou win!!\n");
+			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
 		} else if (mavH == bobH) {
 			System.out.println("\nDraw!!\n");
 			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
@@ -167,6 +170,7 @@ public class BlackjackApp {
 		case "4":
 			System.out.println(
 					"Gambling addiction is not a something to play with\n " + "call 855-2CALLGA (855-222-5542)");
+			System.out.println(d.toString());
 			System.exit(0);
 			break;
 		default:

@@ -34,6 +34,11 @@ public class Deck {
 	public void shuffle() {
 		Collections.shuffle(cards);
 	}
+
+	@Override
+	public String toString() {
+		return "Printing entire shuffled Deck [cards=" + cards + "]";
+	}
 	
 	
 
