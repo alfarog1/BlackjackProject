@@ -92,9 +92,6 @@ public class BlackjackApp {
 	public void dealerPlaysAgain() {
 		bob.getHand().addCard(bob.deal());
 		bob.getHand().addCard(bob.deal());
-//		System.out.println(bob.getHand().getCards().toString());
-//		int bobAmount = bob.getHand().getHandValue();
-//		System.out.println("Dealer has " + bobAmount + " but   Only card showing:" + bob.showFaceUp() + "\n\n");
 		System.out.println("Dealer has " + bob.showFaceUp() + "\n\n");
 
 	}
