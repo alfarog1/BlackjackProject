@@ -147,7 +147,7 @@ public class BlackjackApp {
 
 	public void hitOrStayMenu() {
 		System.out.println("\nDo you want to hit or stay?");
-		System.out.println("1. Hit\n" + "2. Stay\n" + "3. Quit Game\n" + "4. Get Help\n\n");
+		System.out.println("1. Hit\n" + "2. Stay\n" + "3. Quit Game\n" + "4. Get Help/Print Deck\n\n");
 
 		String choice = sc.nextLine();
 		switch (choice) {
