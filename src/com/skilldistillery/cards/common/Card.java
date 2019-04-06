@@ -1,5 +1,6 @@
 package com.skilldistillery.cards.common;
 
+
 public class Card {
 	private Rank rank;
 	private Suit suit;
@@ -36,7 +37,22 @@ public class Card {
 
 	@Override
 	public String toString() {
-		return rank + " of " + suit;
+		 StringBuilder builder = new StringBuilder();
+		    builder.append(rank);
+		    builder.append("  ");
+		    if ( suit == Suit.CLUBS) {
+		    	builder.append(	"♧" );
+		    }
+		    else if ( suit == Suit.DIAMONDS) {
+		    	builder.append(	"♢" );
+		    }
+		    else if ( suit == Suit.HEARTS) {
+		    	builder.append(	"♡" );
+		    }
+		    else if ( suit == Suit.SPADES) {
+		    	builder.append(	"♤" );
+		    }
+			return builder.toString();
 	}
 
 	public int getValue() {

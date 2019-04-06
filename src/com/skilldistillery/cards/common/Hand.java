@@ -23,6 +23,7 @@ List<Card> cards = new ArrayList<>();
 	}
 	public void clearHand() {
 		cards = new ArrayList<>();
+		
 	}
 	
 	public List<Card> getCards() {
@@ -33,7 +34,7 @@ List<Card> cards = new ArrayList<>();
 
 	@Override
 	public String toString() {
-		return "Hand [cards=" + cards + "]";
+		return " 🂠 " + cards + " 🂠 " ;
 	}
 
 	

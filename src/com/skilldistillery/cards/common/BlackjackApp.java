@@ -6,6 +6,7 @@ public class BlackjackApp {
 	Player mav = new Player();
 	Dealer bob = new Dealer();
 	Scanner sc = new Scanner(System.in);
+	boolean dealerGo = true;
 
 	public static void main(String[] args) {
 		BlackjackApp bj = new BlackjackApp();
@@ -27,17 +28,17 @@ public class BlackjackApp {
 		// Deal dealers cards
 		bob.getHand().addCard(bob.deal());
 		bob.getHand().addCard(bob.deal());
-		System.out.println(bob.getHand().getCards().toString());
-		int bobAmount = bob.getHand().getHandValue();
-		System.out.println("Dealer has " + bobAmount + " but   Only card showing:" + bob.showFaceUp() + "\n\n");
+		// Dealer shows only one card
+		System.out.println("\nDealer has " + bob.showFaceUp() + "\n\n");
 
 		// Deal two cards to player
 		mav.getHand().addCard(bob.deal());
 		mav.getHand().addCard(bob.deal());
 		// Show their cards and total sum
-		System.out.println(mav.getHand().getCards().toString());
+		System.out.println(mav.getHand());
 		int playerAmount = mav.getHand().getHandValue();
 		System.out.println("Player has  " + playerAmount);
+		bjCheck();
 
 		hitOrStayMenu();
 
@@ -45,6 +46,14 @@ public class BlackjackApp {
 
 		continueCardBattle();
 
+	}
+
+	public void bjCheck() {
+		int playerAmount = mav.getHand().getHandValue();
+		if (playerAmount == 21) {
+			System.out.println("You Win!!!");
+			playAgain();
+		}
 	}
 
 	public void playerHit() {
@@ -56,10 +65,15 @@ public class BlackjackApp {
 
 	public void continueCardBattle() {
 		// if player did not hit blackjack offer choices to hit or stay
+		dealerGo = true;
+
 		if ((mav.getHand().getHandValue()) < 21) {
 			hitOrStayMenu();
-		} else
+		}
+		if ((mav.getHand().getHandValue()) < 21) {
+
 			dealerHit();
+		}
 	}
 
 	public void dealerHit() {
@@ -75,25 +89,47 @@ public class BlackjackApp {
 		}
 	}
 
-	public void win() {
-		if ((bob.getHand().getHandValue()) < (mav.getHand().getHandValue()) && (mav.getHand().getHandValue()) <= 21) {
-			System.out.println("\nYou win!!\n");
-			playAgain();
-		} else
-			System.out.println("\nYou lose!!!\n");
-			playAgain();
+	public void dealerPlaysAgain() {
+		bob.getHand().addCard(bob.deal());
+		bob.getHand().addCard(bob.deal());
+//		System.out.println(bob.getHand().getCards().toString());
+//		int bobAmount = bob.getHand().getHandValue();
+//		System.out.println("Dealer has " + bobAmount + " but   Only card showing:" + bob.showFaceUp() + "\n\n");
+		System.out.println("Dealer has " + bob.showFaceUp() + "\n\n");
 
+	}
+
+	public void win() {
+		int bobH = bob.getHand().getHandValue();
+		int mavH = mav.getHand().getHandValue();
+
+		if (mavH <= 21 && mavH > bobH) {
+			System.out.println("\nYou win!!\n");
+		}
+		if (mavH <= 21 && bobH > 21) {
+			System.out.println("\nYou win!!\n");
+		} else if (mavH == bobH) {
+			System.out.println("\nDraw!!\n");
+			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
+		} else if (mavH > 21 && bobH <= 21) {
+			dealerGo = false;
+			System.out.println("\nYou lose!!!\n");
+			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
+
+		}
+		playAgain();
 	}
 
 	public void playAgain() {
 		System.out.println("\nWant to play again?\n");
 		System.out.println("1. Yes\n" + "2. No\n");
-		int choice = sc.nextInt();
+		String choice = sc.nextLine();
 		switch (choice) {
-		case 1:
-			playerHit();
+		case "1":
+			clearHand();
+			initialCardBattle();
 			break;
-		case 2:
+		case "2":
 			System.out.println("Thanks for playing!");
 			System.exit(0);
 			break;
@@ -104,29 +140,36 @@ public class BlackjackApp {
 
 	}
 
+	public void clearHand() {
+		mav.hand.clearHand();
+		bob.hand.clearHand();
+	}
+
 	public void hitOrStayMenu() {
 		System.out.println("\nDo you want to hit or stay?");
 		System.out.println("1. Hit\n" + "2. Stay\n" + "3. Quit Game\n" + "4. Get Help\n\n");
 
-		int choice = sc.nextInt();
+		String choice = sc.nextLine();
 		switch (choice) {
-		case 1:
+		case "1":
 			playerHit();
 			win();
+			System.out.println("Dealer has " + bob.getHand().getHandValue() + "\n\n");
 			break;
-		case 2:
+		case "2":
 			dealerHit();
 			win();
+			System.out.println("Dealer has " + bob.getHand().getHandValue() + "\n\n");
 			break;
 
-		case 3:
+		case "3":
 			System.out.println("Thanks for playing");
 			System.exit(0);
 			break;
 
-		case 4:
+		case "4":
 			System.out.println(
-					"Gambling addiction is not a something to play with\n " + "call 855-2CALLGA (855-222-5542");
+					"Gambling addiction is not a something to play with\n " + "call 855-2CALLGA (855-222-5542)");
 			System.exit(0);
 			break;
 		default:
