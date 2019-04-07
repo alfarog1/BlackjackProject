@@ -111,13 +111,13 @@ public class BlackjackApp {
 			System.out.println("\nYou win!!\n");
 			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
 		} else if (mavH == bobH) {
-			System.out.println("\nDraw!!\n");
+			System.out.println("\nPush!!\n");
 			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
 		} else if (bobH > mavH && bobH <= 21) {
 			dealerGo = false;
 			System.out.println("\nYou lose!!!\n");
 			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
-			
+
 		} else if (mavH > 21 && bobH <= 21) {
 			dealerGo = false;
 			System.out.println("\nYou lose!!!\n");
@@ -175,8 +175,8 @@ public class BlackjackApp {
 			break;
 
 		case "4":
-			System.out.println(
-					"Gambling addiction is not something to play with\n " + "call 855-2CALLGA (855-222-5542)");
+			System.out
+					.println("Gambling addiction is not something to play with\n " + "call 855-2CALLGA (855-222-5542)");
 			System.out.println(d.toString());
 			System.exit(0);
 			break;
