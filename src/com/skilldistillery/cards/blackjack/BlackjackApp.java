@@ -1,6 +1,8 @@
-package com.skilldistillery.cards.common;
+package com.skilldistillery.cards.blackjack;
 
 import java.util.Scanner;
+
+import com.skilldistillery.cards.common.Deck;
 
 public class BlackjackApp {
 	Player mav = new Player();
@@ -111,6 +113,11 @@ public class BlackjackApp {
 		} else if (mavH == bobH) {
 			System.out.println("\nDraw!!\n");
 			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
+		} else if (bobH > mavH && bobH <= 21) {
+			dealerGo = false;
+			System.out.println("\nYou lose!!!\n");
+			System.out.println("Player has " + mavH + " and Dealer has " + bobH);
+			
 		} else if (mavH > 21 && bobH <= 21) {
 			dealerGo = false;
 			System.out.println("\nYou lose!!!\n");
@@ -169,7 +176,7 @@ public class BlackjackApp {
 
 		case "4":
 			System.out.println(
-					"Gambling addiction is not a something to play with\n " + "call 855-2CALLGA (855-222-5542)");
+					"Gambling addiction is not something to play with\n " + "call 855-2CALLGA (855-222-5542)");
 			System.out.println(d.toString());
 			System.exit(0);
 			break;

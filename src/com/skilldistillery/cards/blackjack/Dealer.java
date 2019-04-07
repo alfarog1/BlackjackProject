@@ -1,6 +1,8 @@
-package com.skilldistillery.cards.common;
+package com.skilldistillery.cards.blackjack;
 
-
+import com.skilldistillery.cards.common.Card;
+import com.skilldistillery.cards.common.Deck;
+import com.skilldistillery.cards.common.Hand;
 
 public class Dealer {
 	Deck deck;
