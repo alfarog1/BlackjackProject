@@ -3,12 +3,12 @@
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <package id="1" language="java" name="com.skilldistillery.cards.common" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/common" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="117" y="20"/>    
+    <position height="52" width="244" x="190" y="147"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
   <enumeration id="2" language="java" name="com.skilldistillery.cards.common.Suit" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/common/Suit.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="790" y="459"/>    
+    <position height="191" width="153" x="513" y="1161"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -17,7 +17,7 @@
   </enumeration>  
   <enumeration id="3" language="java" name="com.skilldistillery.cards.common.Rank" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/common/Rank.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="785" y="175"/>    
+    <position height="353" width="153" x="706" y="1161"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -26,7 +26,7 @@
   </enumeration>  
   <class id="4" language="java" name="com.skilldistillery.cards.blackjack.BlackjackApp" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/blackjack/BlackjackApp.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="358" y="164"/>    
+    <position height="335" width="162" x="474" y="147"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -35,7 +35,7 @@
   </class>  
   <class id="5" language="java" name="com.skilldistillery.cards.common.Card" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/common/Card.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="606" y="370"/>    
+    <position height="155" width="153" x="610" y="966"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,12 +44,12 @@
   </class>  
   <package id="6" language="java" name="com.skilldistillery.cards.blackjack" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/blackjack" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="577" y="34"/>    
+    <position height="52" width="249" x="676" y="147"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
   <class id="7" language="java" name="com.skilldistillery.cards.blackjack.Dealer" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/blackjack/Dealer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="349" y="469"/>    
+    <position height="191" width="155" x="434" y="522"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -58,7 +58,7 @@
   </class>  
   <class id="8" language="java" name="com.skilldistillery.cards.common.Hand" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/common/Hand.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="337" y="733"/>    
+    <position height="173" width="153" x="417" y="753"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -67,7 +67,7 @@
   </class>  
   <class id="9" language="java" name="com.skilldistillery.cards.blackjack.Player" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/blackjack/Player.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="83" y="141"/>    
+    <position height="137" width="155" x="239" y="522"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -76,7 +76,7 @@
   </class>  
   <class id="10" language="java" name="com.skilldistillery.cards.common.Deck" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/common/Deck.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="595" y="165"/>    
+    <position height="173" width="153" x="610" y="753"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -85,7 +85,7 @@
   </class>  
   <class id="11" language="java" name="com.skilldistillery.cards.blackjack.BlackjackHand" project="Blackjack" 
     file="/Blackjack/src/com/skilldistillery/cards/blackjack/BlackjackHand.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="591" y="556"/>    
+    <position height="83" width="155" x="415" y="966"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,19 +93,19 @@
     </display>  
   </class>  
   <association id="12">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="13" name="cards"/>      
-      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="13" name="bob"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="15">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="16" name="hand"/>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="16" name="cards"/>      
+      <multiplicity id="17" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="18">    
@@ -117,66 +117,66 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="21">    
+    <bendpoint x="619" y="522"/>    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="22" name="mav"/>      
+      <attribute id="22" name="d"/>      
       <multiplicity id="23" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
+    <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="24">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="25" name="cards"/>      
-      <multiplicity id="26" minimum="0" maximum="2147483647"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="25" name="deck"/>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
+    <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="27">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="28" name="rank"/>      
-      <multiplicity id="29" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="30">    
-    <bendpoint x="470" y="412"/>    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="31" name="d"/>      
-      <multiplicity id="32" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="33">    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="34" name="deck"/>      
-      <multiplicity id="35" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="36">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <association id="37">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="38" name="bob"/>      
-      <multiplicity id="39" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="40">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="41" name="hand"/>      
-      <multiplicity id="42" minimum="0" maximum="1"/>    
+      <attribute id="28" name="hand"/>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="30">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="31" name="mav"/>      
+      <multiplicity id="32" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="33">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="34" name="cards"/>      
+      <multiplicity id="35" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="36">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="37" name="hand"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="39">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="40" name="rank"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
